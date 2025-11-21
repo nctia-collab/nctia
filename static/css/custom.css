@@ -1,8 +1,5 @@
 body {
     font-size: 16px;
-    background: url(https://images.unsplash.com/photo-1528660493888-ab6f4761e036?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=e092fab75729f65747fc0a8be035d8a9) no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
     overflow-y: scroll;
 }
 
@@ -149,19 +146,103 @@ nav {
 */
 
 #welcome-section {
-    font-family: "Rubik", sans-serif;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    line-height: 1.5;
-    letter-spacing: 1.3px;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.5;
+  letter-spacing: 1.3px;
+  
+  font-size: 16px;
+  background-image: url("../images/a.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-#welcome-section h1 {
-    color: white;
+  #welcome-section h1 {
+    color: rgb(246, 246, 246);
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-size: 1.5rem;
+    margin: auto;
+  }
+
+/* Text Fade */
+.fade-text-3 {
+  animation:         fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation:    fadeIn 3s;
+  -o-animation:      fadeIn 3s;
+  -ms-animation:     fadeIn 3s;
 }
+
+.fade-text-5 {
+  animation:         fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation:    fadeIn 5s;
+  -o-animation:      fadeIn 5s;
+  -ms-animation:     fadeIn 5s;
+}
+
+.isHighlighted {
+  animation:         fadeIn 10s;
+  -webkit-animation: fadeIn 10s;
+  -moz-animation:    fadeIn 10s;
+  -o-animation:      fadeIn 10s;
+  -ms-animation:     fadeIn 10s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*
+.fade-in {
+  display: none;
+}
+*/
+
+/* Section Fade */
+.section { height: 100vh; }
+
+.tag {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Image Fade */
+.fade-in-image { animation: fadeIn 5s; }
 
 #contact-link {
     text-decoration: none;

@@ -188,6 +188,14 @@ nav {
   -ms-animation:     fadeIn 5s;
 }
 
+.fade-text-10 {
+  animation:         fadeIn 10s;
+  -webkit-animation: fadeIn 10s;
+  -moz-animation:    fadeIn 10s;
+  -o-animation:      fadeIn 10s;
+  -ms-animation:     fadeIn 10s;
+}
+
 .isHighlighted {
   animation:         fadeIn 10s;
   -webkit-animation: fadeIn 10s;

@@ -38,8 +38,9 @@ h3 {
 h2 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 7rem;
+  font-size: clamp(.5rem, 7rem, 7rem);
   margin-bottom: 3rem;
+  overflow-wrap: anywhere;
 }
 
 /* SECTIONS */
@@ -47,6 +48,7 @@ h2 {
   padding: 8% 10%;
   text-align: center;
   min-height: 100%;
+  min-width: 100%;
   font-size: large;
 }
 
@@ -76,7 +78,6 @@ h2 {
 }
 
 .hero-left {
-  flex: .6;
   padding: 6% 3% 3% 3%;
   text-align: center;
 }
@@ -88,7 +89,7 @@ h2 {
 }
 
 .hero-left .title-yellow {
-  font-size: clamp(8rem, 2vw, 8rem);
+  font-size: clamp(16px, 7vw, 8rem);
   color: var(--yellow);
   display: block;
   font-weight: 800;
@@ -120,32 +121,6 @@ h2 {
   height: 100vh;
   overflow: hidden;
   object-fit: cover;
-}
-
-#welcome-section {
-  font-family: "Rubik", sans-serif;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 1.5;
-  letter-spacing: 1.3px;
-
-  font-size: 16px;
-  background-image: url("../../static/images/c.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#welcome-section h1 {
-  color: rgb(246, 246, 246);
-  font-family: "Rubik", sans-serif;
-  text-align: center;
-  padding: 10px 0 10px 0;
-  font-size: 1.5rem;
-  margin: auto;
 }
 
 /* Text Fade */
@@ -260,7 +235,7 @@ nav {
 
 .nav-title {
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: clamp(1.3rem, 2vw, 1.3rem);
   margin-right: auto;
   padding: 0 0 0 20px;
 }
@@ -275,11 +250,11 @@ nav {
 }
 
 .nav-title a:hover {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
 }
 
 .nav-title-dark-bg a:hover {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
   color: white;
 }
 
@@ -292,7 +267,7 @@ nav {
 #nav-link-list * {
   display: inline;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 2vw, 1.1rem);
 }
 
 .nav-link a {
@@ -374,13 +349,28 @@ nav {
 }
 
 .issue .icon {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
 }
 
 .issue h3 {
-  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 2vw, 1.1rem);
   font-weight: 700;
   display: inline;
+}
+
+.happening-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Three equal columns */
+  grid-template-rows: auto auto;
+  /* Three rows with specific heights */
+}
+
+@media (max-width: 800px) {
+  .happening-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ------------------------------------------------------
@@ -405,7 +395,7 @@ nav {
 
 .action-item h3 {
   display: inline;
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -430,7 +420,7 @@ nav {
 }
 
 .involved-card h3 {
-  font-size: 1.15rem;
+  font-size: clamp(1.15rem, 2vw, 1.15rem);
   font-weight: 700;
   margin-bottom: 0.8rem;
 }
@@ -465,16 +455,13 @@ nav {
 }
 
 .project-tile-description {
-  font-family: "Lora", serif;
   padding: 20px;
   text-align: left;
   display: block;
 }
 
-
-
 .project-tile-p {
-  font-family: "Lora", serif;
+  padding-top: 10px;
   text-align: justify;
 }
 
@@ -522,13 +509,20 @@ nav {
   gap: 1.5rem;
 }
 
+@media (max-width: 800px) {
+  .org-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 .org {
   background: white;
   color: #000;
   text-align: center;
   padding: 3rem 1rem;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: clamp(.95rem, 2vw, .95rem);
 }
 
 
@@ -552,7 +546,7 @@ footer h2 {
   border-bottom: solid white;
   border-top: solid white;
   padding: 10px 0 10px 0;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
   margin: 47px 0 30px 0;
 }
 
@@ -603,7 +597,7 @@ footer h2 {
   display: flex;
   flex-direction: column;
   text-align: left;
-  font-size: 0.85rem;
+  font-size: clamp(.85rem, 2vw, .85rem);
   margin-left: 100px;
   max-width: 375px;
 }
@@ -632,7 +626,6 @@ footer h2 {
 }
 
 footer small {
-  font-family: "Lora", serif;
   display: block;
   margin: 40px 0 20px 0;
 }
@@ -644,7 +637,7 @@ footer small {
 ------------------------------------------------------ */
 @media (max-width: 768px) {
   .hero-left .title {
-    font-size: 2.2rem;
+    font-size: clamp(2.2rem, 2vw, 2.2rem);
   }
 }
 
@@ -670,14 +663,6 @@ footer small {
 ------------------------------------------------------ */
 .m-5p {
   margin-top: 5%;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* Three equal columns */
-  grid-template-rows: auto auto;
-  /* Three rows with specific heights */
 }
 
 .display-b {

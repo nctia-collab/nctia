@@ -1,354 +1,482 @@
 ﻿<!doctype html>
-
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127794520-2"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-127794520-2');</script>
-
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-    <!--Awesome Fonts:-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--Google Icons, Fonts, Scripts:-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Rubik|Lora" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!--Other Styles and Scripts-->
-    <link rel="stylesheet" href="./static/css/normalize.min.css">
-
-    <!--My Custom Styles and Scripts:-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./static/css/custom.css">
-    <script src="./static/js/custom.js"></script>
-
     <title>NCTIA | North Carolina Teachers in Action</title>
 </head>
 
 <body>
-    <a id="top"></a>
-
-
-    <!-- HERO SECTION -->
-    <header class="hero section-black">
-        <div class="hero-left">
-
-                <span class="title">NORTH CAROLINA</span>
-                <span class="title-yellow fade-text-5">Teachers</span>
-                <span class="title-yellow fade-text-5">In Action</span>
-
-            <p class="tagline fade-text-10">Standing Together for a Stronger Future</p>
-            <img src="./static/images/logo.png" alt="NCTIA Logo" class="state-graphic fade-text-8">
+    <nav id="navbar" aria-label="navbar" class="navbar sticky-top navbar-expand-lg">
+        <div class="nav-title me-auto">
+            <a href="#">NCTiA</a>
         </div>
-
-        <div class="hero-right">
-            <img src="./static/images/school_building.jpg" alt="School building" />
+        <div id="navbarNavDropdown" class="d-flex">
+            <ul class="navbar-nav nav-link-list">
+                <!--<li class="nav-item">
+                    <a class="nav-link active" aria-current="top" href="#">Home</a>
+                </li>-->
+                <li class="c-nav-link">
+                    <a href="#Who">Who</a>
+                </li>
+                <li class="c-nav-link">
+                    <a href="#What">What</a>
+                </li>
+                <li class="c-nav-link">
+                    <a href="#Action">Action</a>
+                </li>
+                <li class="c-nav-link">
+                    <a href="#organizations">Allies</a>
+                </li>
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>-->
+            </ul>
         </div>
-    </header>
-
-        <nav id="navbar" aria-label="site">
-        <span class="nav-title">
-            <a href="#top">NCTiA</a>
-        </span>
-        <ul id="nav-link-list">
-            <li class="nav-link"><a href="#whatsHappening">What's Happening</a></li>
-            <li class="nav-link"><a href="#getInvolved">Get Involved</a></li>
-            <li class="nav-link"><a href="#organizations">Support Organizations</a></li>
-            <li class="nav-link"><a href="#contact">Contact</a></li>
-        </ul>
     </nav>
-
-    <!-- WHAT'S HAPPENING -->
-    <section id="whatsHappening" class="section section-yellow">
-        <h2 class="section-title">WHAT'S HAPPENING</h2>
-
-        <div class="happening-grid">
-
-            <div class="issue">
-                <h3><span class="icon">»</span> Chronic underfunding and stalled wages:</h3>
-                <p>
-                    Legislators still haven't passed a budget, teacher pay remains below a livable wage, veteran
-                    teachers (15-24 years)
-                    are stuck on a frozen pay scale, and educators have lost longevity pay and master's pay.
-                    Retirement health benefits for educators hired after 2020 are gone.
-                </p>
-            </div>
-
-            <div class="issue">
-                <h3><span class="icon">»</span> Failure to meet legal and constitutional obligations:</h3>
-                <p>
-                    Despite the 2022 Leandro ruling requiring the state to fund a sound basic education, the General
-                    Assembly
-                    continues to withhold necessary resources Judge Robinson found that the General Assembly underfunded
-                    the Comprehensive Remedial Plan by $785M based on the 2021-22 budget. 3 years later - we're still
-                    waiting.
-                </p>
-            </div>
-
-            <div class="issue">
-                <h3><span class="icon">»</span> Escalating diversion of funds away from public schools:</h3>
-                <p>
-                    Expansion of the voucher program—$432.2M last year, projected $655M by 2025-26—sends public money to
-                    private
-                    schools with no income cap and no accountability, further destabilizing the public education system
-                    and pushing
-                    teachers out of the profession.
-                </p>
-            </div>
-
-            <div class="issue">
-                <h3><span class="icon">»</span> Increasing financial strain on educators:</h3>
-                <p>
-                    Many NC teachers work multiple jobs to survive—previously around 50% and rising with inflation. Some
-                    are now
-                    relying on food banks, facing homelessness, and struggling to meet basic needs for their families.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- WHAT YOU CAN DO -->
-    <section id="getInvolved" class="section section-white">
-        <h2 class="section-title">WHAT YOU CAN DO</h2>
-
-        <div class="action-items">
-
-            <div class="action-item">
-                <h3>Spread the Movement:</h3>
-                <p>
-                    Follow NC Teachers in Action on all platforms and repost our content; share the organization widely
-                    with educators, parents, administrators, and community members.
-                </p>
-            </div>
-
-            <div class="action-item">
-                <h3>Engage Politically:</h3>
-                <p>
-                    Contact your legislators, vote for pro-public education candidates, and support educators running
-                    for office—especially in the primaries.
-                </p>
-            </div>
-
-            <div class="action-item">
-                <h3>Build School-level Solidarity:</h3>
-                <p>
-                    Talk openly with your administration and fellow educators about the urgent need for change, and
-                    start making collective plans within your school.
-                </p>
-            </div>
-
-            <div class="action-item">
-                <h3>Stand Up Together:</h3>
-                <p>
-                    Find the courage to step away from an abusive system; organize with colleagues, parents, and the
-                    community to take unified action for public education.
-                </p>
-            </div>
-
-        </div>
-
-        <h2 class="section-title m-5p">GET INVOLVED</h2>
-
-        <div class="involved-grid">
-
-            <div class="involved-card">
-                <h3>Contact your Reps</h3>
-                <p>Links to contact reps <br> graphics <br> scripts</p>
-            </div>
-
-            <div class="involved-card">
-                <h3>Stand with Educators</h3>
-                <p>Link to events <br> intersection flyer template <br> shirts</p>
-            </div>
-
-            <div class="involved-card">
-                <h3>Spread the Word</h3>
-                <p>links to social media <br> form to help</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ORGANIZATIONS -->
-    <section id="organizations" class="section section-black">
-        <h2 class="section-title">ORGANIZATIONS TO SUPPORT</h2>
-        <div class="org-grid">
-            <article class="project-tile">
-                <div class="display-b">
-                    <a href="https://www.afpenc.org/" target="_blank" rel="noopener" title="AFPENC">
-                        <img src="./static/images/AFPENC_Redesign.avif" alt="" >
-                    </a>
+        
+    <div class="container-fluid">
+        <!-- HERO SECTION -->
+        <header class="row section section-black">
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
-                <div class="project-tile-description revealOnScroll">
-                    <h3>AFPENC</h3>
-                    <p class="project-tile-p">
-                        AFPENC's vision is to promote and support confident and effective educators who can develop
-                        well-rounded and responsible learners, inspiring them to achieve their full potential as adult
-                        citizens in our state. We will do this by working independently and collaboratively with all
-                        stakeholders in the North Carolina education system to improve schools and to advance knowledge,
-                        policy, and practice in our state.
-                    </p>
-                    <a href="https://www.afpenc.org/" target="_blank" rel="noopener">
-                        AFPENC
-                    </a>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <svg aria-hidden="true" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="var(--yellow)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-start mb-5">
+                                <h1>"I should not have to depend on food banks and credit cards as an educator."</h1>
+                                <p class="opacity-75">
+                                    - Pitt County Educator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg aria-hidden="true" height="100%" preserveAspectRatio="xMidYMid slice"
+                            width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="var(--yellow)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-start mb-3">
+                                <h1>"I work hard daily for these sweet kids. I love them. Do not take my kindness as weakness though. I still have to feed my kids!"</h1>
+                                <p>
+                                    - Wake County Educator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg aria-hidden="true" height="100%" preserveAspectRatio="xMidYMid slice"
+                            width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="var(--yellow)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1>"I'm sick of being  underpaid as a single mom. I have a second job and I'm exhausted and broken. My bills are adding up. I can't afford groceries much less a vacation."</h1>
+                                <p>
+                                    - Union County Educator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <svg aria-hidden="true" height="100%" preserveAspectRatio="xMidYMid slice"
+                            width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="var(--yellow)"></rect>
+                        </svg>
+                        <div class="container">
+                            <div class="carousel-caption text-start mb-5">
+                                <h1>"It CANNOT BE that teachers have to go to food pantries to feed their families while working 60 plus hours a week with a masters degree!"</h1>
+                                <p>
+                                    - Wake County Educator
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-
-            <article class="project-tile">
-                <div class="revealOnScroll">
-                    <a href="https://communityconversationsilm.com/" target="_blank" rel="noopener" title="IAmLEANDRO">
-                        <img src="./static/images/IAmLeandro.webp" alt="">
-                    </a>
-                </div>
-                <div class="project-tile-description revealOnScroll">
-                    <h3>#IAmLEANDRO</h3>
-                    <p class="project-tile-p">
-                        We are not just waiting for change, we are the change. To change the culture, we must learn
-                        how to connect and collaborate. We believe this happens with safe and healing communication.
-                        We create opportunities for positive, cross-cultural interaction. We invite people to grow,
-                        grow together and collectively become the change we want to see in the world.
-                    </p>
-                    <a href="https://communityconversationsilm.com/" target="_blank" rel="noopener">
-                        #IAmLEANDRO
-                    </a>
-                </div>
-            </article>
-
-            <article class="project-tile">
-                <div class="revealOnScroll">
-                    <a href="https://saylorcommunicatio.wixsite.com/nc-educators-ballot" target="_blank" rel="noopener" title="NCEOTB">
-                        <img src="./static/images/NCTOTB.png" alt="Image of Algorithm Code">
-                    </a>
-                </div>
-                <div class="project-tile-description revealOnScroll">
-                    <h3>NC Educators on the Ballot</h3>
-                    <p class="project-tile-p">
-                        NC Educators on the Ballot is a grassroots campaign to reignite a vision of strong public
-                        education in our great state and bring public schools back to priority status in both parties.
-                    </p>
-                    <a href="https://saylorcommunicatio.wixsite.com/nc-educators-ballot" target="_blank" rel="noopener">
-                        NC Educators on the Ballot
-                    </a>
-                </div>
-            </article>
-
-            <article class="project-tile">
-                <div class="revealOnScroll">
-                    <a href="https://www.ncae.org/" target="_blank" rel="noopener" title="NCEA">
-                        <img src="./static/images/NCAE.jpg" alt="Tile Images of Responsive Projects">
-                    </a>
-                </div>
-                <div class="project-tile-description revealOnScroll">
-                    <h3>NCEA</h3>
-                    <p class="project-tile-p">
-                        By working with parents, families, and community groups, NCAE is leading a movement to build
-                        excellent public schools that will nourish the minds of future generations and center public
-                        schools
-                        as the heart of our communities. NCAE is an association of teachers and school employees, but
-                        every
-                        single one of us is in this because we believe in the future of our youngest generation.
-                    </p>
-                    <a href="https://www.ncae.org/" target="_blank" rel="noopener">
-                        NCEA
-                    </a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <h2>CONTACT</h2>
-        <div id="contact-div">
-            <div id="contact-div-left">
-                <img id="personal-photo" src="./static/images/logo.png" alt="">
-                <p>NC Teachers in Action</p>
-                <ul id="contact-social-icons">
-                    <li>
-                        <a id="profile-link" href="https://www.facebook.com/groups/ncteachersinaction" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg viewBox="0 0 32 32" aria-hidden="true" role="img">
-                                <title>Facebook</title>
-                                <path fill="#C2C2C2" hover="white"
-                                    d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://x.com/NCTeachInAction" target="_blank" rel="noopener noreferrer">
-                            <svg viewBox="0 0 35 32" aria-hidden="true" role="img">
-                                <title>X</title>
-                                <path fill="#C2C2C2"
-                                    d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ncteachersinaction/" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg viewBox="0 0 900 700" aria-hidden="true" role="img">
-                                <title>Instagram</title>
-                                <path fill="#C2C2C2"
-                                    d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z">
-                                </path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="www.youtube.com/@NCTeachersinAction" target="_blank">
-                            <svg viewBox="0 0 650 650" aria-hidden="true" role="img">
-                                <title>YouTube</title>
-                                <path fill="#C2C2C2"
-                                    d="M69.3 144.5c-41 68.5-36.4 163 1 227C92.5 409.7 120 423.9 120 438c0 6.8-6 13-12.8 13C87.7 451 8 375.5 8 253.2c0-111.5 78-186 97.1-186 6 0 14.9 4.8 14.9 11.1 0 12.7-28.3 28.6-50.7 66.2zm195.8 213.8c4.5 1.8 12.3 5.2 12.3-1.2 0-2.7-2.2-2.9-4.3-3.6-8.5-3.4-14-7.7-19.1-15.2-8.2-12.1-10.1-24.2-10.1-38.6 0-32.1 44.2-37.9 44.2-70 0-12.3-7.7-15.9-7.7-19.3 0-2.2.7-2.2 2.9-2.2 8 0 19.1 13.3 22.5 19.8 2.2 4.6 2.4 6 2.4 11.1 0 7-.7 14.2-.7 21.3 0 27 31.9 19.8 31.9 6.8 0-6-3.6-11.6-3.6-17.4 0-.7 0-1.2.7-1.2 3.4 0 9.4 7.7 11.1 10.1 5.8 8.9 8.5 20.8 8.5 31.4 0 32.4-29.5 49-29.5 56 0 1 2.9 7.7 12.1 1.9 29.7-15.1 53.1-47.6 53.1-89.8 0-33.6-8.7-57.7-32.1-82.6-3.9-4.1-16.4-16.9-22.5-16.9-8.2 0 7.2 18.6 7.2 31.2 0 7.2-4.8 12.3-12.3 12.3-11.6 0-14.5-25.4-15.9-33.3-5.8-33.8-12.8-58.2-46.4-74.1-10.4-5-36.5-11.8-36.5-2.2 0 2.4 2.7 4.1 4.6 5.1 9.2 5.6 19.6 21.4 19.6 38.2 0 46.1-57.7 88.2-57.7 136.2-.2 40.3 28.1 72.6 65.3 86.2zM470.4 67c-6 0-14.4 6.5-14.4 12.6 0 8.7 12.1 19.6 17.6 25.4 81.6 85.1 78.6 214.3 17.6 291-7 8.9-35.3 35.3-35.3 43.5 0 5.1 8.2 11.4 13.2 11.4 25.4 0 98.8-80.8 98.8-185.7C568 145.9 491.8 67 470.4 67zm-42.3 323.1H167c-9.4 0-15.5 7.5-15.5 16.4 0 8.5 7 15.5 15.5 15.5h261.1c9.4 0 11.9-7.5 11.9-16.4 0-8.5-3.5-15.5-11.9-15.5z">
-                                </path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/@ncteachersinaction?is_from_webapp=1&sender_device=pc"
-                            target="_blank" rel="noopener noreferrer">
-                            <svg viewBox="0 0 650 650" aria-hidden="true" role="img">
-                                <title>TikTok</title>
-                                <path fill="#C2C2C2"
-                                    d="M69.3 144.5c-41 68.5-36.4 163 1 227C92.5 409.7 120 423.9 120 438c0 6.8-6 13-12.8 13C87.7 451 8 375.5 8 253.2c0-111.5 78-186 97.1-186 6 0 14.9 4.8 14.9 11.1 0 12.7-28.3 28.6-50.7 66.2zm195.8 213.8c4.5 1.8 12.3 5.2 12.3-1.2 0-2.7-2.2-2.9-4.3-3.6-8.5-3.4-14-7.7-19.1-15.2-8.2-12.1-10.1-24.2-10.1-38.6 0-32.1 44.2-37.9 44.2-70 0-12.3-7.7-15.9-7.7-19.3 0-2.2.7-2.2 2.9-2.2 8 0 19.1 13.3 22.5 19.8 2.2 4.6 2.4 6 2.4 11.1 0 7-.7 14.2-.7 21.3 0 27 31.9 19.8 31.9 6.8 0-6-3.6-11.6-3.6-17.4 0-.7 0-1.2.7-1.2 3.4 0 9.4 7.7 11.1 10.1 5.8 8.9 8.5 20.8 8.5 31.4 0 32.4-29.5 49-29.5 56 0 1 2.9 7.7 12.1 1.9 29.7-15.1 53.1-47.6 53.1-89.8 0-33.6-8.7-57.7-32.1-82.6-3.9-4.1-16.4-16.9-22.5-16.9-8.2 0 7.2 18.6 7.2 31.2 0 7.2-4.8 12.3-12.3 12.3-11.6 0-14.5-25.4-15.9-33.3-5.8-33.8-12.8-58.2-46.4-74.1-10.4-5-36.5-11.8-36.5-2.2 0 2.4 2.7 4.1 4.6 5.1 9.2 5.6 19.6 21.4 19.6 38.2 0 46.1-57.7 88.2-57.7 136.2-.2 40.3 28.1 72.6 65.3 86.2zM470.4 67c-6 0-14.4 6.5-14.4 12.6 0 8.7 12.1 19.6 17.6 25.4 81.6 85.1 78.6 214.3 17.6 291-7 8.9-35.3 35.3-35.3 43.5 0 5.1 8.2 11.4 13.2 11.4 25.4 0 98.8-80.8 98.8-185.7C568 145.9 491.8 67 470.4 67zm-42.3 323.1H167c-9.4 0-15.5 7.5-15.5 16.4 0 8.5 7 15.5 15.5 15.5h261.1c9.4 0 11.9-7.5 11.9-16.4 0-8.5-3.5-15.5-11.9-15.5z">
-                                </path>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+        </header>
 
-            <div id="contact-div-right">
-                <ul id="contact-div-right-list">
-                    <li>
-                        Facebook: <br />
-                        <a class="div-right-link" href="https://www.facebook.com/groups/ncteachersinaction"
-                            target="_blank" rel="noopener noreferrer">
-                            https://www.facebook.com/groups/ncteachersinaction
-                        </a>
-                    </li>
-                    <li>
-                        YouTube: <br />
-                        <a class="div-right-link" href="www.youtube.com/@NCTeachersinAction" target="_blank">
-                            www.youtube.com/@NCTeachersinAction
-                        </a>
-                    </li>
-                    <li>
-                        Email: <br />
-                        <a class="div-right-link" href="mailto:daxlloyd28@gmail.com" target="_blank">
-                            NCTeachersInAction@gmail.com
-                        </a>
-                    </li>
-                </ul>
+        <!-- WHO -->
+        <section id="Who" class="row section section-black">
+            <div class="col">
+                <div class="row">
+                    <h2 class="section-title">Who We Are</h2>
+                </div>
+                <div class="row">
+                    <div class="col col-md-6 who-left">
+
+                        <span class="title">NORTH CAROLINA</span>
+                        <span class="title-yellow fade-text-5">Teachers</span>
+                        <span class="title-yellow fade-text-5">In Action</span>
+
+                        <img src="./static/images/logo.png" alt="NCTIA Logo" class="img-fluid state-graphic fade-text-8">
+                    </div>
+
+                    <div class="col col-md-6 section-yellow">
+                        <p>A grass-roots movement, we are the collective voices of teachers in North Carolina</p>
+
+                        <ul>
+                            <li>
+                                <p>We are fighting for public education</p>
+                            </li>
+                            <li>
+                                <p>We are fighting for our students </p>
+                            </li>
+                            <li>
+                                <p>We are fighting for their parents </p>
+                            </li>
+                            <li>
+                                <p>We are fighting for ourselves </p>
+                            </li>
+                        </ul>
+
+                        <p>and are ready to take action.</p>
+                        <p>
+                            <em>We are asking you to fight with us, safely but boldly. 
+                                <span>
+                                    <a href="#Action">Here's how.</a>
+                                </span>
+                            </em>
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <p><small>&copy; 2025 North Carolina Teachers in Action</small></p>
-    </footer>
+        </section>
+
+        <!-- WHAT -->
+        <section id="What" class="row section section-yellow">
+            <div class="col">
+                <h2 class="section-title">WHAT IS HAPPENING</h2>
+
+                <div class="happening-grid">
+
+                    <div class="issue">
+                        <h3><span class="icon">»</span> Chronic underfunding and stalled wages:</h3>
+                        <p class="text-wrap">
+                            Legislators still haven't passed a budget, teacher pay remains below a livable wage, veteran
+                            teachers (15-24 years)
+                            are stuck on a frozen pay scale, and educators have lost longevity pay and master's pay.
+                            Retirement health benefits for educators hired after 2020 are gone.
+                        </p>
+                    </div>
+
+                    <div class="issue">
+                        <h3><span class="icon">»</span> Failure to meet legal and constitutional obligations:</h3>
+                        <p class="text-wrap">
+                            Despite the 2022 Leandro ruling requiring the state to fund a sound basic education, the
+                            General
+                            Assembly
+                            continues to withhold necessary resources Judge Robinson found that the General Assembly
+                            underfunded
+                            the Comprehensive Remedial Plan by $785M based on the 2021-22 budget. 3 years later - we're
+                            still
+                            waiting.
+                        </p>
+                    </div>
+
+                    <div class="issue">
+                        <h3><span class="icon">»</span> Escalating diversion of funds away from public schools:</h3>
+                        <p class="text-wrap">
+                            Expansion of the voucher program—$432.2M last year, projected $655M by 2025-26—sends public
+                            money to
+                            private
+                            schools with no income cap and no accountability, further destabilizing the public education
+                            system
+                            and pushing
+                            teachers out of the profession.
+                        </p>
+                    </div>
+
+                    <div class="issue">
+                        <h3><span class="icon">»</span> Increasing financial strain on educators:</h3>
+                        <p class="text-wrap">
+                            Many NC teachers work multiple jobs to survive—previously around 50% and rising with
+                            inflation. Some
+                            are now
+                            relying on food banks, facing homelessness, and struggling to meet basic needs for their
+                            families.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- When & Where -->
+        <section id="Action" class="row section section-white">
+            <div class="col">
+                <h2 class="section-title">TIME FOR ACTION</h2>
+
+                <div class="action-items">
+
+                    <div class="action-item">
+                        <h3>Spread the Movement:</h3>
+                        <p class="text-wrap">
+                            Follow NC Teachers in Action on all platforms and repost our content; share the organization
+                            widely with educators, parents, administrators, and community members.
+                        </p>
+                    </div>
+
+                    <div class="action-item">
+                        <h3>Engage Politically:</h3>
+                        <p class="text-wrap">
+                            Contact your legislators, vote for pro-public education candidates, and support educators
+                            running for office—especially in the primaries.
+                        </p>
+                    </div>
+
+                    <div class="action-item">
+                        <h3>Build School-level Solidarity:</h3>
+                        <p class="text-wrap">
+                            Talk openly with your administration and fellow educators about the urgent need for change,
+                            and start making collective plans within your school.
+                        </p>
+                    </div>
+
+                    <div class="action-item">
+                        <h3>Stand Up Together:</h3>
+                        <p class="text-wrap">
+                            Find the courage to step away from an abusive system; organize with colleagues, parents, and
+                            the community to take unified action for public education.
+                        </p>
+                    </div>
+
+                </div>
+
+                <h2 class="section-title mt-5">GET INVOLVED</h2>
+
+                <div class="involved-grid">
+
+                    <div class="involved-card">
+                        <h3>Contact your Reps</h3>
+                        <p>Links to contact reps <br> graphics <br> scripts</p>
+                    </div>
+
+                    <div class="involved-card">
+                        <h3>Stand with Educators</h3>
+                        <p>Link to events <br> intersection flyer template <br> shirts</p>
+                    </div>
+
+                    <div class="involved-card">
+                        <h3>Spread the Word</h3>
+                        <p>links to social media <br> form to help</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ORGANIZATIONS -->
+        <section id="orgs" class="row section section-black">
+            <div class="col">
+                <h2 class="section-title">ALLIES</h2>
+                <p clas="text-wrap text-center">
+                    Below are organizations that are involved in some way in this fight for public education in North Carolina.
+                </p>
+
+                <div class="org-grid">
+                    <article class="org-tile">
+                        <div class="revealOnScroll">
+                            <a href="https://www.afpenc.org/" target="_blank" rel="noopener" title="AFPENC">
+                                <img src="./static/images/AFPENC_Redesign.avif" alt="">
+                            </a>
+                        </div>
+                        <div class="org-tile-description revealOnScroll">
+                            <h3>AFPENC</h3>
+                            <p class="text-wrap py-2">
+                                AFPENC's vision is to promote and support confident and effective educators who can
+                                develop well-rounded and responsible learners, inspiring them to achieve their full potential as
+                                adult citizens in our state. We will do this by working independently and collaboratively with
+                                all stakeholders in the North Carolina education system to improve schools and to advance
+                                knowledge, policy, and practice in our state.
+                                <a href="https://www.afpenc.org/" target="_blank" rel="noopener">
+                                Visit AFPENC
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="org-tile">
+                        <div class="revealOnScroll">
+                            <a href="https://communityconversationsilm.com/" target="_blank" rel="noopener"
+                                title="IAmLEANDRO">
+                                <img src="./static/images/IAmLeandro.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="org-tile-description revealOnScroll">
+                            <h3>#IAmLEANDRO</h3>
+                            <p class="text-wrap py-2">
+                                We are not just waiting for change, we are the change. To change the culture, we must
+                                learn how to connect and collaborate. We believe this happens with safe and healing
+                                communication. We create opportunities for positive, cross-cultural interaction. We invite people to
+                                grow,grow together and collectively become the change we want to see in the world.
+                                <a href="https://communityconversationsilm.com/" target="_blank" rel="noopener">
+                                Visit #IAmLEANDRO
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="org-tile">
+                        <div class="revealOnScroll">
+                            <a href="https://saylorcommunicatio.wixsite.com/nc-educators-ballot" target="_blank"
+                                rel="noopener" title="NCEOTB">
+                                <img src="./static/images/NCTOTB.png" class="object-fit-cover" alt="Image of Algorithm Code">
+                            </a>
+                        </div>
+                        <div class="org-tile-description revealOnScroll">
+                            <h3>NC Educators on the Ballot</h3>
+                            <p class="text-wrap py-2">
+                                NC Educators on the Ballot is a grassroots campaign to reignite a vision of strong
+                                public education in our great state and bring public schools back to priority status in both
+                                parties.
+                                <a href="https://saylorcommunicatio.wixsite.com/nc-educators-ballot" target="_blank" rel="noopener">
+                                Visit NC Educators on the Ballot
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="org-tile">
+                        <div class="revealOnScroll">
+                            <a href="https://www.ncae.org/" target="_blank" rel="noopener" title="NCEA">
+                                <img src="./static/images/NCAE.jpg" class="object-fit-scale" alt="Tile Images of Responsive Projects">
+                            </a>
+                        </div>
+                        <div class="org-tile-description revealOnScroll">
+                            <h3>NCEA</h3>
+                            <p class="text-wrap py-2">
+                                By working with parents, families, and community groups, NCAE is leading a movement to
+                                build excellent public schools that will nourish the minds of future generations and center
+                                public schools as the heart of our communities. NCAE is an association of teachers and school
+                                employees, but every single one of us is in this because we believe in the future of our
+                                youngest generation.
+                                <a href="https://www.ncae.org/" target="_blank" rel="noopener">
+                                Visit NCEA
+                                </a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="row">
+            <div class="col">
+                <h2 class="col-md-2 mx-auto mb-5">CONTACT</h2>
+                <div id="contact-div">
+                    <div id="contact-div-left">
+                        <img id="contact-logo" src="./static/images/logoWithName.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div id="contact-div-right">
+                        <ul id="contact-social-icons">
+                            <li>
+                                <a id="profile-link" href="https://www.facebook.com/groups/ncteachersinaction" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="32" 
+                                        height="32" 
+                                        fill="var(--yellow)"
+                                        class="bi bi-facebook" 
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/NCTeachInAction" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="32" 
+                                        height="32" 
+                                        fill="var(--yellow)"
+                                        class="bi bi-twitter-x" 
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/ncteachersinaction/" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="32" 
+                                        height="32" 
+                                        fill="var(--yellow)"
+                                        class="bi bi-instagram" 
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@ncteachersinaction?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="32" 
+                                        height="32" 
+                                        fill="var(--yellow)"
+                                        class="bi bi-tiktok" 
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                        width="32" 
+                                        height="32" 
+                                        fill="var(--yellow)"
+                                        class="bi bi-envelope" 
+                                        viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p><small>&copy; 2025 North Carolina Teachers in Action</small></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./static/js/custom.js"></script>   
 </body>
 
 </html>

@@ -30,7 +30,7 @@
                     <a href="#Action">Action</a>
                 </li>
                 <li class="c-nav-link">
-                    <a href="#organizations">Allies</a>
+                    <a href="#allies">Allies</a>
                 </li>
                 <!--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,7 +48,7 @@
         
     <div class="container-fluid">
         <!-- HERO SECTION -->
-        <header class="row section section-black">
+        <header id="hero" class="row section section-black">
             <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
@@ -121,6 +121,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+                <div id="fadeTrigger"></div>
             </div>
         </header>
 
@@ -130,42 +131,41 @@
                 <div class="row">
                     <h2 class="section-title">Who We Are</h2>
                 </div>
+                <div id="nctia" class="row">
+                    <span class="title fade-text-1">NORTH CAROLINA</span>
+                    <span class="title-yellow fade-text-3">Teachers In Action</span>
+
+                    <img src="./static/images/logo.png" alt="NCTIA Logo" class="img-fluid state-graphic fade-text-1">
+                </div>
                 <div class="row">
-                    <div class="col col-md-6 who-left">
+                    <div id="who-outer" class="col col-md-12">
+                        <div id="who-inner" class="section-black">
+                            <p class="op-1">A grass-roots movement, we are the collective voices of teachers in North Carolina</p>
 
-                        <span class="title">NORTH CAROLINA</span>
-                        <span class="title-yellow fade-text-5">Teachers</span>
-                        <span class="title-yellow fade-text-5">In Action</span>
+                            <ul id="we-are-list">
+                                <li>
+                                    <p class="fade-in-1"><em>We are fighting for public education</em></p>
+                                </li>
+                                <li>
+                                    <p class="fade-in-2"><em>We are fighting for our students</em></p>
+                                </li>
+                                <li>
+                                    <p class="fade-in-3"><em>We are fighting for their parents</em></p>
+                                </li>
+                                <li>
+                                    <p class="fade-in-4"><em>We are fighting for ourselves</em></p>
+                                </li>
+                                <li>
+                                    <p class="fade-in-5"><em>And are ready to take action</em></p>
+                                </li>
+                            </ul>
 
-                        <img src="./static/images/logo.png" alt="NCTIA Logo" class="img-fluid state-graphic fade-text-8">
-                    </div>
-
-                    <div class="col col-md-6 section-yellow">
-                        <p>A grass-roots movement, we are the collective voices of teachers in North Carolina</p>
-
-                        <ul>
-                            <li>
-                                <p>We are fighting for public education</p>
-                            </li>
-                            <li>
-                                <p>We are fighting for our students </p>
-                            </li>
-                            <li>
-                                <p>We are fighting for their parents </p>
-                            </li>
-                            <li>
-                                <p>We are fighting for ourselves </p>
-                            </li>
-                        </ul>
-
-                        <p>and are ready to take action.</p>
-                        <p>
-                            <em>We are asking you to fight with us, safely but boldly. 
+                            <p class="op-1">We are asking you to fight with us, safely but boldly. 
                                 <span>
-                                    <a href="#Action">Here's how.</a>
+                                    <em><a href="#Action">Here's how...</a></em>
                                 </span>
-                            </em>
-                        </p>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,9 +182,8 @@
                         <h3><span class="icon">»</span> Chronic underfunding and stalled wages:</h3>
                         <p class="text-wrap">
                             Legislators still haven't passed a budget, teacher pay remains below a livable wage, veteran
-                            teachers (15-24 years)
-                            are stuck on a frozen pay scale, and educators have lost longevity pay and master's pay.
-                            Retirement health benefits for educators hired after 2020 are gone.
+                            teachers (15-24 years) are stuck on a frozen pay scale, and educators have lost longevity 
+                            pay and master's pay. Retirement health benefits for educators hired after 2020 are gone.
                         </p>
                     </div>
 
@@ -192,13 +191,9 @@
                         <h3><span class="icon">»</span> Failure to meet legal and constitutional obligations:</h3>
                         <p class="text-wrap">
                             Despite the 2022 Leandro ruling requiring the state to fund a sound basic education, the
-                            General
-                            Assembly
-                            continues to withhold necessary resources Judge Robinson found that the General Assembly
-                            underfunded
-                            the Comprehensive Remedial Plan by $785M based on the 2021-22 budget. 3 years later - we're
-                            still
-                            waiting.
+                            General Assembly continues to withhold necessary resources Judge Robinson found that the General Assembly
+                            underfunded the Comprehensive Remedial Plan by $785M based on the 2021-22 budget. 3 years later - we're
+                            still waiting.
                         </p>
                     </div>
 
@@ -206,12 +201,8 @@
                         <h3><span class="icon">»</span> Escalating diversion of funds away from public schools:</h3>
                         <p class="text-wrap">
                             Expansion of the voucher program—$432.2M last year, projected $655M by 2025-26—sends public
-                            money to
-                            private
-                            schools with no income cap and no accountability, further destabilizing the public education
-                            system
-                            and pushing
-                            teachers out of the profession.
+                            money to private schools with no income cap and no accountability, further destabilizing the 
+                            public education system and pushing teachers out of the profession.
                         </p>
                     </div>
 
@@ -219,10 +210,30 @@
                         <h3><span class="icon">»</span> Increasing financial strain on educators:</h3>
                         <p class="text-wrap">
                             Many NC teachers work multiple jobs to survive—previously around 50% and rising with
-                            inflation. Some
-                            are now
-                            relying on food banks, facing homelessness, and struggling to meet basic needs for their
-                            families.
+                            inflation. Some are now relying on food banks, facing homelessness, and struggling to 
+                            meet basic needs for their families.
+                        </p>
+                    </div>
+
+                    <div class="issue">
+                        <h3><span class="icon">»</span> The "Education Lottery" funds half of what was originally planned:</h3>
+                        <p class="text-wrap">
+                            When the North Carolina State Lottery Act of 2005 was passed, the law required that 35% of total 
+                            lottery proceeds be transderred for education purporses. This was a statutory requirement in the
+                            original legislation. In 2007, this requirement was changed to a guideline and recent data has 
+                            shown a progressive decline. In FY 2025, ~16% of lottery sales revenue went to education, less 
+                            than half of the original law.
+                        </p>
+                    </div>
+
+                    <div class="issue">
+                        <h3><span class="icon">»</span> NC received an 'F' in public school funding:</h3>
+                        <p class="text-wrap">
+                            The Education Law Center's "Making the Grade 2025" report gave NC failing grades in funding level 
+                            (per-pupil revenue) and funding effort (education spending relative to the state's economy). 
+                            North Carolina was 50th out of 51 in per-pupil public school funding ($5,600 less per student 
+                            than the national average) and ranked dead last in funding effort. In addition, per pupil funding 
+                            fell from $12,252 in 2022 to $12,193 in 2023.
                         </p>
                     </div>
 
@@ -257,7 +268,7 @@
                     <div class="action-item">
                         <h3>Build School-level Solidarity:</h3>
                         <p class="text-wrap">
-                            Talk openly with your administration and fellow educators about the urgent need for change,
+                            Talk openly with your administration, PTA, and fellow educators about the urgent need for change,
                             and start making collective plans within your school.
                         </p>
                     </div>
@@ -278,17 +289,40 @@
 
                     <div class="involved-card">
                         <h3>Contact your Reps</h3>
-                        <p>Links to contact reps <br> graphics <br> scripts</p>
-                    </div>
-
-                    <div class="involved-card">
-                        <h3>Stand with Educators</h3>
-                        <p>Link to events <br> intersection flyer template <br> shirts</p>
+                        <p>Find Your Senators 
+                            <br> 
+                            Find Your Representatives  
+                            <br> 
+                            <a href="https://forms.gle/MXRgKuxV4QBXsrWg9" target="_blank" rel="noopener">
+                                Scripts You Can Use
+                            </a> 
+                            <br> 
+                            Candidate Information</p>
                     </div>
 
                     <div class="involved-card">
                         <h3>Spread the Word</h3>
-                        <p>links to social media <br> form to help</p>
+                        <p>
+                            <a href="https://www.facebook.com/share/1BgsKXFNgw/" target="_blank" rel="noopener">
+                                January 7th Event
+                            </a>     
+                            <br> 
+                            Flyer Database 
+                            <br> 
+                            <a href="https://www.customink.com/g/set0-00d0-jhtf?fbclid=IwY2xjawPGabtleHRuA2FlbQIxMQBicmlkETFncjhkUHRmUW5nMFFyM3BFc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmJGcFPrhnvgIEgyE7N8k39xh2oooh-ertJy9D19Oz--XnSSxJrrI-Q_xYc0_aem_I5wBZ_ZTzo01E8-o9EjPtA"
+                               target="_blank" rel="noopener">
+                                Order a Shirt
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="involved-card">
+                        <h3>Stand with Educators</h3>
+                        <p>
+                            <a id="shareYourStory" href="#" rel="noopener">Share Your Educator Story</a>
+                            <br> 
+                            <a href="https://forms.gle/jCcW6MqN6pEEyoFPA" target="_blank" rel="noopener">Let us know we'll see you on January 7th!</a>
+                        </p>
                     </div>
 
                 </div>
@@ -296,11 +330,15 @@
         </section>
 
         <!-- ORGANIZATIONS -->
-        <section id="orgs" class="row section section-black">
+        <section id="allies" class="row section section-black">
             <div class="col">
                 <h2 class="section-title">ALLIES</h2>
-                <p clas="text-wrap text-center">
-                    Below are organizations that are involved in some way in this fight for public education in North Carolina.
+                <p id="allies-description" clas="text-wrap text-center">
+                    Across North Carolina, educators are organizing in many ways, all working toward the same goal: 
+                    <span>strong, fully funded public schools for every student.</span> While our structures may differ,
+                    <span> we are united by shared values</span> of respect for educators, fair compensation, and the 
+                    constitutional promise of a sound education. <span>Together</span>, these collective efforts are 
+                    building the power needed to create <span>real, lasting change in NC public education</span>.
                 </p>
 
                 <div class="org-grid">
@@ -312,16 +350,16 @@
                         </div>
                         <div class="org-tile-description revealOnScroll">
                             <h3>AFPENC</h3>
-                            <p class="text-wrap py-2">
+                            <p class="text-wrap pt-2 m-0">
                                 AFPENC's vision is to promote and support confident and effective educators who can
                                 develop well-rounded and responsible learners, inspiring them to achieve their full potential as
                                 adult citizens in our state. We will do this by working independently and collaboratively with
                                 all stakeholders in the North Carolina education system to improve schools and to advance
                                 knowledge, policy, and practice in our state.
-                                <a href="https://www.afpenc.org/" target="_blank" rel="noopener">
-                                Visit AFPENC
-                                </a>
                             </p>
+                            <a href="https://www.afpenc.org/" target="_blank" rel="noopener">
+                                Visit AFPENC
+                            </a>
                         </div>
                     </article>
 
@@ -334,15 +372,15 @@
                         </div>
                         <div class="org-tile-description revealOnScroll">
                             <h3>#IAmLEANDRO</h3>
-                            <p class="text-wrap py-2">
+                            <p class="text-wrap pt-2 m-0">
                                 We are not just waiting for change, we are the change. To change the culture, we must
                                 learn how to connect and collaborate. We believe this happens with safe and healing
                                 communication. We create opportunities for positive, cross-cultural interaction. We invite people to
                                 grow,grow together and collectively become the change we want to see in the world.
-                                <a href="https://communityconversationsilm.com/" target="_blank" rel="noopener">
-                                Visit #IAmLEANDRO
-                                </a>
                             </p>
+                            <a href="https://communityconversationsilm.com/" target="_blank" rel="noopener">
+                                Visit #IAmLEANDRO
+                            </a>
                         </div>
                     </article>
 
@@ -355,14 +393,14 @@
                         </div>
                         <div class="org-tile-description revealOnScroll">
                             <h3>NC Educators on the Ballot</h3>
-                            <p class="text-wrap py-2">
+                            <p class="text-wrap pt-2 m-0">
                                 NC Educators on the Ballot is a grassroots campaign to reignite a vision of strong
                                 public education in our great state and bring public schools back to priority status in both
                                 parties.
-                                <a href="https://saylorcommunicatio.wixsite.com/nc-educators-ballot" target="_blank" rel="noopener">
-                                Visit NC Educators on the Ballot
-                                </a>
                             </p>
+                            <a href="https://saylorcommunicatio.wixsite.com/nc-educators-ballot" target="_blank" rel="noopener">
+                                Visit NC Educators on the Ballot
+                            </a>
                         </div>
                     </article>
 
@@ -374,16 +412,16 @@
                         </div>
                         <div class="org-tile-description revealOnScroll">
                             <h3>NCEA</h3>
-                            <p class="text-wrap py-2">
+                            <p class="text-wrap pt-2 m-0">
                                 By working with parents, families, and community groups, NCAE is leading a movement to
                                 build excellent public schools that will nourish the minds of future generations and center
                                 public schools as the heart of our communities. NCAE is an association of teachers and school
                                 employees, but every single one of us is in this because we believe in the future of our
                                 youngest generation.
-                                <a href="https://www.ncae.org/" target="_blank" rel="noopener">
-                                Visit NCEA
-                                </a>
                             </p>
+                            <a href="https://www.ncae.org/" target="_blank" rel="noopener">
+                                Visit NCEA
+                            </a>
                         </div>
                     </article>
                 </div>
@@ -396,6 +434,9 @@
                 <div id="contact-div">
                     <div id="contact-div-left">
                         <img id="contact-logo" src="./static/images/logoWithName.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div id="contact-div-middle">
                     </div>
 
                     <div id="contact-div-right">
@@ -453,7 +494,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a>
+                                <a href="#" id="envelope">
                                     <svg xmlns="http://www.w3.org/2000/svg" 
                                         width="32" 
                                         height="32" 
@@ -467,7 +508,7 @@
                         </ul>
                     </div>
                 </div>
-                <p><small>&copy; 2025 North Carolina Teachers in Action</small></p>
+                <p><small>&copy; 2026 North Carolina Teachers in Action</small></p>
             </div>
         </footer>
     </div>

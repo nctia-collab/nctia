@@ -67,72 +67,33 @@ h2 {
 /* ------------------------------------------------------
    HERO
 ------------------------------------------------------ */
-.who-left {
-  padding: 6% 3% 3% 3%;
-  text-align: center;
-}
 
-.who-left .title {
+.title {
   font-size: clamp(14px, 2vw, 4rem);
   font-weight: 400;
   letter-spacing: 20px;
 }
 
-.who-left .title-yellow {
-  font-size: clamp(16px, 7vw, 8rem);
+.title-yellow {
+  font-size: clamp(16px, 5vw, 6rem);
   color: var(--yellow);
   display: block;
   font-weight: 800;
   letter-spacing: 5px;
-  line-height: 10rem;
-}
-
-.who-left .tagline {
-  font-size: clamp(14px, 2vw, 1.60rem);
-  margin-bottom: 1rem;
-  letter-spacing: 5px;
-  margin: 2rem 0 7rem 0;
+  line-height: 8rem;
 }
 
 .state-graphic {
   display: block;
+  margin: 20px auto 0 auto;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 20%;
 }
 
 /* Text Fade */
-.fade-text-3 {
-  -webkit-animation: fadeIn 3s;
-  -moz-animation:    fadeIn 3s;
-  -o-animation:      fadeIn 3s;
-  -ms-animation:     fadeIn 3s;
-  animation:         fadeIn 3s;
-}
-
-.fade-text-5 {
-  -webkit-animation: fadeIn 5s;
-  -moz-animation:    fadeIn 5s;
-  -o-animation:      fadeIn 5s;
-  -ms-animation:     fadeIn 5s;
-  animation:         fadeIn 5s;
-}
-
-.fade-text-8 {
-  -webkit-animation: fadeIn 8s;
-  -moz-animation:    fadeIn 8s;
-  -o-animation:      fadeIn 8s;
-  -ms-animation:     fadeIn 8s;
-  animation:         fadeIn 8s;
-}
-
-.fade-text-10 {
-  -webkit-animation: fadeIn 10s;
-  -moz-animation:    fadeIn 10s;
-  -o-animation:      fadeIn 10s;
-  -ms-animation:     fadeIn 10s;
-  animation:         fadeIn 10s;
-}
+.fade-text-1 { opacity: 0; }
+.fade-text-3 { opacity: 0; }
 
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -209,13 +170,14 @@ nav {
   color: white;
 }
 
-#nav-link-list {
+.nav-link-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  flex-direction: row !important;
 }
 
-#nav-link-list * {
+.nav-link-list * {
   display: inline;
   text-align: center;
   font-size: clamp(1.1rem, 2vw, 1.1rem);
@@ -253,40 +215,8 @@ nav {
   color: #c2c2c2;
 }
 
-@media (max-width: 765px) {
-  nav {
-    flex-direction: row;
-    justify-content: center;
-  }
 
-  .nav-title {
-    display: none;
-  }
 
-  .c-nav-link a {
-    padding: 2px 12px 2px 12px;
-    margin: 0;
-    border: none;
-  }
-
-  .nav-link-dark-bg a {
-    border: none;
-  }
-
-  .c-nav-link a:hover {
-    border: none;
-  }
-
-  .nav-link-dark-bg a:hover {
-    border: none;
-  }
-}
-
-@media (max-width: 380px) {
-  .c-nav-link a {
-    padding: 2px 5px 2px 5px;
-  }
-}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -323,6 +253,59 @@ nav {
 
 
 /* ------------------------------------------------------
+   WHO WE ARE
+------------------------------------------------------ */
+
+#nctia {
+  margin: 5% 0 7% 0;
+}
+
+#who-outer {
+  height: 80vh;
+  background-image: url("../images/school_building.jpg");
+  background-size: 100vw;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+
+#who-inner {
+  position: relative;
+  right: -50%;
+  opacity: .7;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#who-inner p {
+  font-weight: 500;
+}
+
+.op-1 {
+  opacity: 1;
+}
+
+#we-are-list {
+  list-style-type: none;
+  padding: 0px;
+  color: var(--yellow);
+}
+
+.fade-in-1 { opacity: 0;}
+.fade-in-2 { opacity: 0;}
+.fade-in-3 { opacity: 0;}
+.fade-in-4 { opacity: 0;}
+.fade-in-5 { opacity: 0;}
+
+/* ------------------------------------------------------
    WHAT'S HAPPENING
 ------------------------------------------------------ */
 
@@ -337,9 +320,10 @@ nav {
 }
 
 .issue h3 {
-  font-size: clamp(1.1rem, 2vw, 1.1rem);
-  font-weight: 700;
-  display: inline;
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
+  font-weight: 750;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .happening-grid {
@@ -378,7 +362,7 @@ nav {
 .action-item h3 {
   display: inline;
   font-size: clamp(1.2rem, 2vw, 1.2rem);
-  font-weight: 700;
+  font-weight: 750;
   margin-bottom: 0.5rem;
 }
 
@@ -389,32 +373,41 @@ nav {
 .involved-grid {
   max-width: 1000px;
   margin: 3rem auto 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2.5rem;
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .involved-card {
   border-top: 2px solid #000;
   padding-top: 1.5rem;
-  min-height: 180px;
+  height: 200px;
+  width: 240px;
 }
 
 .involved-card h3 {
-  font-size: clamp(1.15rem, 2vw, 1.15rem);
-  font-weight: 700;
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
+  font-weight: 750;
   margin-bottom: 0.8rem;
 }
 
 /* ------------------------------------------------------
    ORGANIZATIONS
 ------------------------------------------------------ */
-#orgs {
+#allies {
   display: flex;
   padding-top: 50px;
   flex-direction: column;
   text-align: center;
+}
+
+#allies-description {
+  padding: 0 15% 0 15%;
+}
+
+#allies-description span{
+  color: var(--yellow);
 }
 
 .org-grid {
@@ -422,7 +415,7 @@ nav {
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 550px 550px;
+  grid-template-rows: 575px 575px;
   gap: 2rem;
 }
 
@@ -458,25 +451,6 @@ nav {
   height: 170px
 }
 
-@media (max-width: 765px) {
-  .org-tile {
-    flex-direction: column;
-    padding: 20px 0px 20px 0px;
-  }
-
-  .org-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .org-tile-img {
-    max-width: 275px;
-    max-height: 225px;
-    margin: auto;
-    position: relative;
-  }
-}
-
 
 /* ------------------------------------------------------
    FOOTER
@@ -497,39 +471,42 @@ footer h2 {
   border-bottom: solid white;
   border-top: solid white;
   padding: 10px 0 10px 0;
+  width: 150px;
   font-size: clamp(1.5rem, 2vw, 1.5rem);
 }
 
 #contact-div {
   display: flex;
+  flex-direction: row;
   text-align: center;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 #contact-div-left {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin-right: 40px;
-  margin-left: 22%;
-  max-width: 350px;
+  width: 350px;
+  margin-left:15%;
 }
 
-#contact-logo {
-  width: 67%;
+  #contact-logo {
+    width: 67%;
+  }
+
+#contact-div-middle {
+  border-left: solid white;
+  width: 0px;
+  height: 70px;
 }
 
 #contact-social-icons {
   display: flex;
+  justify-content: space-evenly;
   list-style-type: none;
   padding: 10px 0 10px 0;
-  margin: 0 0 0 86px;
+  width: 350px;
 }
 
 #contact-social-icons * {
-  margin: 0 0 0 5px;
   -webkit-transition: fill 0.3s linear;
   -moz-transition: fill 0.3s linear;
   -o-transition: fill 0.3s linear;
@@ -541,13 +518,8 @@ footer h2 {
 }
 
 #contact-div-right {
-  border-left: solid white;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-size: clamp(.85rem, 2vw, .85rem);
-  margin-right: auto;
   max-width: 375px;
+  margin-right:15%;
 }
 
 #contact-div-right-list {
@@ -594,16 +566,52 @@ footer small {
   }
 
   #contact-social-icons * {
-    margin: 0px;
+    margin: 0px 5px 0px 5px;
   }
 }
 
 /* ------------------------------------------------------
    RESPONSIVE TUNING
 ------------------------------------------------------ */
-@media (max-width: 765px) {
-  .who-left .title {
+
+@media (max-width: 1320px) {
+  .org-grid {
+    grid-template-rows: 625px 625px;
+  }
+}
+
+@media (max-width: 1115px) {
+  .org-grid {
+    grid-template-rows: 700px 700px;
+  }
+}
+
+@media (max-width: 860px) {
+  .title {
     font-size: clamp(2.2rem, 2vw, 2.2rem);
+  }
+
+  .involved-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .org-tile {
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .org-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 575px 575px 575px 575px;
+  }
+
+  .org-tile-img {
+    max-width: 275px;
+    max-height: 225px;
+    margin: auto;
+    position: relative;
   }
 
   #contact-div {
@@ -614,7 +622,17 @@ footer small {
     margin: 0px 0px 25px 0px;
   }
 
+  #contact-div-middle {
+    display: none;
+  }
+
   #contact-div-right {
     margin: 0;
+  }
+
+  @media (max-width: 575px) {
+    .org-grid {
+      grid-template-rows: 625px 625px 625px 625px;
+    }
   }
 }

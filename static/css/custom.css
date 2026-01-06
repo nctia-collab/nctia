@@ -580,15 +580,28 @@ footer small {
   .org-grid {
     grid-template-rows: 625px 625px;
   }
+
+  #who-inner {
+    height: 80vh;
+    width: 60%;
+  }
 }
 
 @media (max-width: 1115px) {
   .org-grid {
     grid-template-rows: 700px 700px;
   }
+
+  #who-inner {
+    width: 100%;
+  }
 }
 
 @media (max-width: 860px) {
+  h2 {
+    font-size: 4rem;
+  }
+
   .title {
     font-size: clamp(2.2rem, 2vw, 2.2rem);
   }
@@ -632,9 +645,19 @@ footer small {
     margin: 0;
   }
 
+  @media (max-width: 650px) {
+    .carousel-item {
+        height: 90vh;
+    }
+
+    #who-outer{
+      background-size: 100vh;
+    }
+  }
+
   @media (max-width: 575px) {
     .org-grid {
-      grid-template-rows: 625px 625px 625px 625px;
+      grid-template-rows: 650px 650px 650px 650px;
     }
   }
 }

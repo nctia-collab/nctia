@@ -12,11 +12,6 @@ function sendEmail() {
 }
 
 $(document).ready(function() {
-  document.getElementById("shareYourStory").addEventListener("click", function(event) {
-      event.preventDefault(); // Prevent navigation
-      shareYourStory();
-  });
-
   document.getElementById("envelope").addEventListener("click", function(event) {
       event.preventDefault(); // Prevent navigation
       sendEmail();
@@ -38,11 +33,11 @@ $(document).ready(function() {
     if (nctiaTop <= 0) {
       $("#who-inner").animate({ right: "0px" }, 500);
 
-      $(".fade-in-1").delay(1000).fadeTo(1000, 1);
-      $(".fade-in-2").delay(2000).fadeTo(1000, 1);
-      $(".fade-in-3").delay(3000).fadeTo(1000, 1);
-      $(".fade-in-4").delay(4000).fadeTo(1000, 1);
-      $(".fade-in-5").delay(5000).fadeTo(1000, 1);
+      $(".fade-in-1").fadeTo(1000, 1);
+      $(".fade-in-2").delay(1000).fadeTo(1000, 1);
+      $(".fade-in-3").delay(2000).fadeTo(1000, 1);
+      $(".fade-in-4").delay(3000).fadeTo(1000, 1);
+      $(".fade-in-5").delay(4000).fadeTo(1000, 1);
     }
   });
 });

@@ -262,7 +262,7 @@ nav {
 
 #who-outer {
   height: 80vh;
-  background-image: url("../images/school_building.jpg");
+  background-image: url("../images/school_entrance_bwr.jpg");
   background-size: 100vw;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -283,10 +283,12 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 5%;
 }
 
 #who-inner p {
   font-weight: 500;
+  font-size: larger;
 }
 
 .op-1 {

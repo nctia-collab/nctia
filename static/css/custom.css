@@ -668,4 +668,17 @@ footer small {
       
     }
   }
+
+  @media (max-width: 475px) {
+    #navbar {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-title {
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+  }
 }

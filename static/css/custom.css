@@ -417,7 +417,7 @@ nav {
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 575px 575px;
+  grid-template-rows: 800px 575px;
   gap: 2rem;
 }
 
@@ -578,7 +578,7 @@ footer small {
 
 @media (max-width: 1320px) {
   .org-grid {
-    grid-template-rows: 625px 625px;
+    grid-template-rows: 825px 625px;
   }
 
   #who-inner {
@@ -589,7 +589,7 @@ footer small {
 
 @media (max-width: 1115px) {
   .org-grid {
-    grid-template-rows: 700px 700px;
+    grid-template-rows: 1050px 700px;
   }
 
   #who-inner {
@@ -619,7 +619,7 @@ footer small {
   .org-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 575px 575px 575px 575px;
+    grid-template-rows: 725px 575px 575px 575px;
   }
 
   .org-tile-img {
@@ -656,8 +656,15 @@ footer small {
   }
 
   @media (max-width: 575px) {
+    h2 {
+      font-size: 3rem;
+    }
+
     .org-grid {
-      grid-template-rows: 650px 650px 650px 650px;
+      grid-template-rows: 1000px 625px 600px 625px;
+      padding: .5rem;
+      gap: .5rem;
+      
     }
   }
 }

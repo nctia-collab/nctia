@@ -16,6 +16,7 @@ body {
   color: var(--white);
   line-height: 1.55;
   background-color: var(--black);
+  overflow-x: hidden;
 }
 
 header video {

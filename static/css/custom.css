@@ -596,6 +596,10 @@ footer small {
     width: 100%;
     right: 0px;
   }
+  
+	.state-graphic {
+		width: 40%;
+	}
 }
 
 @media (max-width: 860px) {
@@ -654,6 +658,10 @@ footer small {
     #who-outer{
       background-size: 100vh;
     }
+	
+	.state-graphic {
+		width: 50%;
+	}
   }
 
   @media (max-width: 575px) {
@@ -680,5 +688,9 @@ footer small {
         margin: auto;
         padding: 0;
     }
+	
+	.state-graphic {
+		width: 60%;
+	}
   }
 }

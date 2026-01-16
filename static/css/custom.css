@@ -307,9 +307,9 @@ nav {
 .fade-in-4 { opacity: 0;}
 .fade-in-5 { opacity: 0;}
 
-#detailsComingSoon {
-		width: 40%;
-    margin: 140px auto 30px auto;
+#detailsComingSoon img{
+		width: 30%;
+    margin: 140px auto 40px auto;
 }
 
 #actionButtons {
@@ -688,6 +688,11 @@ footer small {
   }
 
   @media (max-width: 575px) {
+    #detailsComingSoon img{
+        width: 70%;
+        margin: 140px auto 40px auto;
+    }
+
     #actionButtons {
         font-size: smaller;
     }

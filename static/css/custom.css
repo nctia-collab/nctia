@@ -647,7 +647,7 @@ footer small {
   .org-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 575px 725px 575px 575px 575px;
+    grid-template-rows: 600px 750px 575px 575px 575px; 
   }
 
   .org-tile-img {
@@ -708,7 +708,7 @@ footer small {
     }
 
     .org-grid {
-      grid-template-rows: 625px 1000px 600px 675px 650px;
+      grid-template-rows: 650px 1000px 625px 625px 650px;
       padding: .5rem;
       gap: .5rem;
       
